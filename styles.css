@@ -600,3 +600,28 @@
         padding: 50px 20px;
     }
 }
+
+/* ============================= */
+/* SECCIÓN REDES SOCIALES */
+/* ============================= */
+.social-section {
+    background-color: #111; /* Fondo oscuro */
+    color: #fff;
+}
+
+.social-section h3 {
+    color: #FFD700; /* Título dorado */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.social-link i {
+    color: #FFD700;       /* Iconos dorados */
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-link:hover i {
+    color: #fff;          /* Cambio de color al pasar el mouse */
+    transform: scale(1.25); /* Un poco más grande al hover */
+}
