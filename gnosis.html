@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gnosis</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+        <div class="container">
+            <!-- Logo como imagen (desktop & mobile) -->
+            <a class="navbar-brand" href="index.html">
+                <!-- Logo Desktop -->
+                <img src="./img/logo xl.png" alt="G Entertainment Logo Desktop" class="logo-img logo-desktop">
+                <!-- Logo Mobile -->
+                <img src="./img/G.png" alt="G Entertainment Logo Mobile" class="logo-img logo-mobile">
+            </a>
+
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stereotypos.html">STEREOTYPOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gnosis.html">GNOSIS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="privados.html">EVENTOS PRIVADOS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ============================= -->
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero hero-gnosis d-flex align-items-center text-center">
+            <div class="container">
+                <h1 class="hero-title">GNOSIS</h1>
+                <p class="hero-subtitle">Espectáculo multi-tributo que fusiona la pasión del flamenco, la fuerza de las
+                    guitarras españolas y la alegría del repertorio gipsy, creando experiencias únicas que emocionan y
+                    conectan con todo público.
+                </p>
+            </div>
+        </section>
+
+        <!-- Biography Section -->
+        <section id="bio-gnosis" class="biography-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">GNOSIS <br>BIOGRAFÍA</h2>
+                <div class="bio-content mx-auto" style="max-width: 900px;">
+
+                    <p>
+                        GNOSIS nace en 2025 como respuesta a la creciente demanda de nuestros clientes y productores de
+                        eventos, quienes buscaban una propuesta versátil, innovadora y auténtica. Inspirados en el
+                        inigualable legado de los Gipsy Kings, decidimos expandir nuestra visión para crear un
+                        multi-tributo
+                        musical capaz de adaptarse a cualquier escenario, género y atmósfera, ofreciendo así una
+                        experiencia
+                        única que combina tradición y modernidad.
+                    </p>
+
+                    <h3 class="mt-4">Orígenes y visión</h3>
+                    <p>
+                        Nuestra esencia se sustenta en la fuerza de las guitarras españolas, la pasión de la voz
+                        flamenca y
+                        el arte de la danza, logrando un espectáculo que envuelve los sentidos y conecta profundamente
+                        con
+                        el público en cada presentación. Cada interpretación está cuidadosamente diseñada para
+                        transmitir
+                        emoción, energía y autenticidad, recreando la magia del flamenco y la vibrante alegría del
+                        repertorio gipsy en un formato accesible y sorprendente.
+                    </p>
+
+                    <hr class="my-4">
+
+                    <h3 class="mt-4">Shows destacados y expansión</h3>
+                    <p>
+                        A lo largo de nuestros shows, GNOSIS combina momentos de intensa pasión con instantes de
+                        celebración
+                        y diversión, asegurando que cada evento se convierta en un recuerdo inolvidable. Nuestra
+                        propuesta
+                        no solo rinde homenaje a los grandes clásicos de los Gipsy Kings, sino que también incorpora
+                        elementos de otros géneros y estilos musicales, ofreciendo un multi-tributo dinámico capaz de
+                        adaptarse a públicos de todas las edades y contextos.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================= -->
+        <!-- CONTACT FORM SECTION -->
+        <!-- ============================= -->
+        <section id="contact-form" class="contact-form-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">¡Contrátanos!</h2>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+
+                        <form id="whatsappForm">
+                            <!-- Campos -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre y Apellido</label>
+                                <input type="text" class="form-control" id="name" placeholder="Tu nombre completo"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="service" class="form-label">Servicio Solicitado</label>
+                                <select class="form-select" id="service" required>
+                                    <option value="" disabled selected>Selecciona un servicio</option>
+                                    <option value="Stereotypos">Stereotypos</option>
+                                    <option value="Gnosis">Gnosis</option>
+                                    <option value="Evento Privado">Evento Privado</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Número de Teléfono</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="+54 9 11 1234 5678"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="details" class="form-label">Detalles</label>
+                                <textarea class="form-control" id="details" rows="4" placeholder="Describe tu solicitud"
+                                    required></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-golden px-5 py-2">Enviar WhatsApp</button>
+                            </div>
+                        </form>
+
+                        <!-- ============================= -->
+                        <!-- JS Formulario WhatsApp -->
+                        <!-- ============================= -->
+                        <script>
+                            document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+                                e.preventDefault();
+
+                                const name = document.getElementById("name").value.trim();
+                                const service = document.getElementById("service").value;
+                                const phone = document.getElementById("phone").value.trim();
+                                const details = document.getElementById("details").value.trim();
+
+                                const whatsappNumber = "18187145008"; // Cambiar por tu número real
+
+                                const message = `📩 *Nueva solicitud de cotización!*%0A
+                                *Nombre y Apellido:* ${name}%0A
+                                *Servicio solicitado:* ${service}%0A
+                                *Teléfono:* ${phone}%0A
+                                *Detalles:* ${details}`;
+
+                                window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
+                                // Limpiar formulario
+                                this.reset();
+                            });
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION -->
+
+        <section id="gallery" class="gallery-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Galería</h2>
+
+                <div class="gallery-masonry row g-3">
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis1.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis2.jpg" alt="Descripción 2">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis3.jpg" alt="Descripción 3">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 4 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis4.jpg" alt="Descripción 4">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 5 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis5.jpg" alt="Descripción 5">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 6 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis6.jpg" alt="Descripción 6">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis7.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis8.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis9.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis10.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis11.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis12.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis13.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis14.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis15.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis16.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis17.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis18.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis19.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis20.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis21.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis22.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis23.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis24.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis25.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis26.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis27.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis28.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis29.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis30.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis31.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Item de galería 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriagnosis/gnosis32.jpg" alt="Descripción 1">
+                        </div>
+                    </div>
+
+                    <!-- Agregar más items según necesites -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

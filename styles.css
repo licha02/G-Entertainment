@@ -1,0 +1,602 @@
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+
+.custom-navbar {
+    background-color: #000000;
+    /* Fondo negro sólido */
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+    /* Línea dorada sutil */
+}
+
+/* Logo base */
+.logo-img {
+    height: 45px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+/* Desktop logo visible por defecto */
+.logo-desktop {
+    display: inline-block;
+}
+
+/* Mobile logo oculto por defecto */
+.logo-mobile {
+    display: none;
+}
+
+/* Media Query: en pantallas <= 992px (Bootstrap breakpoint lg) */
+@media (max-width: 992px) {
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: inline-block;
+        height: 40px;
+        /* tamaño más pequeño para mobile */
+    }
+}
+
+/* Links de navegación */
+.navbar-nav .nav-link {
+    padding: 1rem;
+    color: #ffffff;
+    margin-left: 1rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover en links */
+.navbar-nav .nav-link:hover {
+    color: #FFD700;
+    transform: scale(1.05);
+}
+
+/* Activo */
+.navbar-nav .nav-link.active {
+    color: #FFD700 !important;
+    font-weight: 600;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+    border: none;
+}
+
+/* Ícono hamburguesa en blanco */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.hero {
+    height: 100vh;
+    /* Ocupa toda la pantalla */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+}
+
+/* Oscurecer imagen de fondo para mejor legibilidad */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/* Contenido Hero */
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Título principal */
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #b8912e;
+    /* Dorado */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+    margin-top: 16rem;
+}
+
+/* Subtítulo */
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* ============================= */
+/* HERO VARIACIONES POR PÁGINA */
+/* ============================= */
+
+/* Hero de Index */
+.hero-index {
+    background-image: url("./img/heroindex-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .hero-index {
+        background-image: url("./img/heroindex-mobile.jpg");
+    }
+}
+
+/* Hero de Stereotypos */
+.hero-stereotypos {
+    background-image: url("./img/herostereotypos-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .hero-stereotypos {
+        background-image: url("./img/herostereotypos-mobile.jpg");
+    }
+}
+
+/* Hero de Gnosis */
+.hero-gnosis {
+    background-image: url("./img/herognosis-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .hero-gnosis {
+        background-image: url("./img/herognosis-mobile.jpg");
+    }
+}
+
+/* Hero de Privados */
+.hero-privados {
+    background-image: url("./img/heropriv-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .hero-privados {
+        background-image: url("./img/heropriv-mobile.jpg");
+    }
+}
+
+/* ============================= */
+/* BIOGRAPHY SECTION */
+/* ============================= */
+
+.biography-section {
+    background-color: #111;
+    /* Fondo gris oscuro */
+    color: #f5f5f5;
+    line-height: 1.7;
+}
+
+.biography-section .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFD700;
+    /* Dorado */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.biography-section h3 {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: #FFD700;
+    font-weight: 600;
+}
+
+.biography-section h4 {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.biography-section p {
+    margin-bottom: 1rem;
+}
+
+.biography-section ul {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.biography-section ul li {
+    margin-bottom: 0.3rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+/* Bullet personalizado */
+.biography-section ul li::before {
+    content: "•";
+    color: #FFD700;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Separadores */
+.biography-section hr {
+    border: none;
+    border-top: 1px solid rgba(255, 215, 0, 0.3);
+    margin: 2rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .biography-section .section-title {
+        font-size: 2rem;
+    }
+
+    .biography-section h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* ============================= */
+/* CONTACT FORM SECTION */
+/* ============================= */
+
+.contact-form-section {
+    background-color: #111;
+    /* Fondo oscuro */
+    color: #f5f5f5;
+}
+
+.contact-form-section .section-title {
+    color: #FFD700;
+    /* Dorado */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.contact-form-section label {
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.contact-form-section .form-control,
+.contact-form-section .form-select {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #FFD700;
+}
+
+.contact-form-section .form-control:focus,
+.contact-form-section .form-select:focus {
+    border-color: #FFD700;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    outline: none;
+}
+
+.btn-golden {
+    background-color: #FFD700;
+    color: #000;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-golden:hover {
+    background-color: #e6c200;
+    transform: scale(1.05);
+}
+
+
+
+/* ============================= */
+/* GALLERY SECTION */
+/* ============================= */
+.gallery-section {
+    background-color: #111;
+    /* Fondo oscuro */
+    padding: 80px 0;
+}
+
+.gallery-section .section-title {
+    color: #FFD700;
+    /* Dorado */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Contenedor masonry */
+.gallery-masonry {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+/* Item de galería */
+.gallery-masonry .gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Sombra */
+    background-color: transparent;
+    /* Eliminamos el gris */
+    margin-bottom: 20px;
+    /* Separación entre items */
+}
+
+/* Imagen completa y visible */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Siempre se ve completa */
+    display: block;
+    border-radius: 10px;
+    /* Bordes redondeados en la imagen */
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover */
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+    .gallery-section {
+        padding: 50px 20px;
+    }
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: #000000;
+    color: #ccc;
+}
+
+.footer-logo {
+    max-height: 50px;
+}
+
+.text-gold {
+    color: #d4af37;
+    font-weight: 600;
+}
+
+/* Divider */
+.footer-divider {
+    border-color: rgba(212, 175, 55, 0.884);
+}
+
+/* Contacto */
+.footer-contact {
+    color: #ddd;
+    font-size: 0.95rem;
+}
+
+
+/* SECCION ABOUT - INDEX */
+
+/* About Section */
+#about {
+    background-color: #111;
+    color: #eee;
+    text-align: center;
+}
+
+#about h2 {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.about-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+    color: #ddd;
+}
+
+/* Dorado en negritas */
+.about-text strong {
+    color: #d4af37;
+}
+
+/* Último párrafo destacado */
+.about-text.highlight {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+
+/* SECCION SERVICIOS - INDEX */
+
+/* Colores dorados y fondo oscuro */
+#services {
+    background-color: #111;
+}
+
+.text-gold {
+    color: #d4af37;
+    /* Dorado */
+    font-weight: 700;
+}
+
+/* Cards */
+.service-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #1c1c1c;
+    box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(212, 175, 55, 0.5);
+}
+
+/* Imágenes */
+.service-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Botones dorados uniformes */
+.service-btn {
+    background-color: #d4af37;
+    color: #111;
+    border: none;
+    font-weight: 600;
+    padding: 10px 30px;
+    /* un poco más ancho horizontalmente */
+    min-width: 180px;
+    /* ancho mínimo uniforme */
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.service-btn:hover {
+    background-color: #b8912e;
+    color: #fff;
+}
+
+
+/* Texto */
+.card-text {
+    color: #eee;
+    font-size: 0.95rem;
+}
+
+/* PROXIMOS EVENTOS INDEX */
+
+#eventos {
+    background-color: #111;
+    color: #fff;
+}
+
+.event-card {
+    background-color: #1c1c1c;
+    border: 1px solid #444;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    border-color: gold;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+.event-img {
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.event-title {
+    font-weight: bold;
+    color: gold;
+}
+
+.event-datetime {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.event-location {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.text-gold {
+    color: gold;
+}
+
+/* STEREOTYPOS QUE OFRECEMOS */
+
+.offers-section {
+    background-color: #111;
+    /* Fondo oscuro */
+    color: #fff;
+    /* Texto blanco */
+}
+
+.offers-section .section-title {
+    color: #FFD700;
+    /* Título dorado */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.offers-section h3 {
+    color: #FFD700;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.offers-section h4 {
+    color: #FFD700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.offers-section p,
+.offers-section li {
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.offers-section ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .offers-section {
+        padding: 50px 20px;
+    }
+}
