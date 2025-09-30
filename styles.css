@@ -612,28 +612,30 @@
 /* SECCIÓN REDES SOCIALES */
 /* ============================= */
 .social-section {
-    background-color: #111;
-    /* Fondo oscuro */
-    color: #fff;
+  background: #000;        /* fondo negro */
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .social-section h3 {
-    color: #FFD700;
-    /* Título dorado */
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: gold;             /* texto blanco */
 }
 
-.social-link i {
-    color: #FFD700;
-    /* Iconos dorados */
-    transition: transform 0.3s, color 0.3s;
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
-.social-link:hover i {
-    color: #fff;
-    /* Cambio de color al pasar el mouse */
-    transform: scale(1.25);
-    /* Un poco más grande al hover */
+.social-icons a {
+  font-size: 2.5rem;
+  color: gold;             /* íconos dorados */
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #d4af37;          /* dorado más oscuro en hover */
 }
