@@ -1,35 +1,40 @@
-function limpiarTexto(texto) {
-  return texto.replace(/^"|"$/g, '').trim();
-}
-
 document.addEventListener("DOMContentLoaded", function () {
   const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTYXaBnWUdr0ez_s_zpNTaE_1BWxeqS0B9HsuWC3UceY3Ng59bRUupMWbXvtZ8cSljn-s6HXF_JdmPx/pub?output=csv";
 
-  fetch(sheetURL)
-    .then((response) => response.text())
-    .then((data) => {
-      const rows = data.split("\n").slice(1);
-      const cards = document.querySelectorAll("#eventos-container .event-card");
+  const container = document.getElementById("eventos-container");
+  container.innerHTML = "";
 
-      rows.slice(0, 4).forEach((row, i) => {
-        const cols = row.split(",").map(limpiarTexto);
+  Papa.parse(sheetURL, {
+    download: true,
+    header: false,
+    skipEmptyLines: true,
+    complete: function(results) {
+      const rows = results.data.slice(1); // Saltar encabezados
 
-        if (cols[0] && cols[1]) {
-          const img = cards[i].querySelector(".event-img");
-          const title = cards[i].querySelector(".event-title");
-          const datetime = cards[i].querySelector(".event-datetime");
-          const location = cards[i].querySelector(".event-location");
+      rows.forEach((cols) => {
+        if (!cols[0] || !cols[1]) return;
 
-          img.src = cols[0];
-          title.textContent = cols[1];
-          datetime.textContent = `${cols[2]} ${cols[3]}`;
-          location.textContent = cols[4];
+        // Limpiar solo comillas externas de la dirección (columna 4)
+        const direccion = cols[4] ? cols[4].trim().replace(/^"|"$/g, '') : '';
 
-          cards[i].parentElement.style.display = "block";
-        } else {
-          cards[i].parentElement.style.display = "none";
-        }
+        const cardHTML = `
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 event-card">
+              <img src="${cols[0].trim()}" class="card-img-top event-img" alt="Evento">
+              <div class="card-body text-center">
+                <h5 class="card-title event-title">${cols[1].trim()}</h5>
+                <p class="card-text event-datetime">${cols[2].trim()} ${cols[3].trim()}</p>
+                <p class="card-text event-location">${direccion}</p>
+              </div>
+            </div>
+          </div>
+        `;
+
+        container.insertAdjacentHTML("beforeend", cardHTML);
       });
-    })
-    .catch((error) => console.error("Error al cargar la hoja:", error));
+    },
+    error: function(err) {
+      console.error("Error al cargar la hoja:", err);
+    }
+  });
 });
