@@ -96,7 +96,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -119,7 +119,7 @@
 /* Subtítulo */
 .hero-subtitle {
     font-size: 1.3rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     color: #ffffff;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
 }
@@ -141,9 +141,16 @@
 
 /* Hero de Index */
 .hero-index {
-    background-image: url("./img/heroindex-desktop.jpg");
+    background-image: url("./img/heroindex-desktop.png");
     background-size: cover;
     background-position: center;
+
+}
+
+/* Desactiva overlay en el hero de index */
+.hero.hero-index::before {
+    background: none !important;
+    content: none !important;
 }
 
 @media (max-width: 768px) {
@@ -605,23 +612,28 @@
 /* SECCIÓN REDES SOCIALES */
 /* ============================= */
 .social-section {
-    background-color: #111; /* Fondo oscuro */
+    background-color: #111;
+    /* Fondo oscuro */
     color: #fff;
 }
 
 .social-section h3 {
-    color: #FFD700; /* Título dorado */
+    color: #FFD700;
+    /* Título dorado */
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
 
 .social-link i {
-    color: #FFD700;       /* Iconos dorados */
+    color: #FFD700;
+    /* Iconos dorados */
     transition: transform 0.3s, color 0.3s;
 }
 
 .social-link:hover i {
-    color: #fff;          /* Cambio de color al pasar el mouse */
-    transform: scale(1.25); /* Un poco más grande al hover */
+    color: #fff;
+    /* Cambio de color al pasar el mouse */
+    transform: scale(1.25);
+    /* Un poco más grande al hover */
 }
