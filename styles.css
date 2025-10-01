@@ -381,6 +381,23 @@
     transition: transform 0.3s ease;
 }
 
+/* Video dentro de galería */
+.gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Igual que las imágenes */
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Hover en video (opcional, igual que en img) */
+.gallery-item:hover video {
+    transform: scale(1.05);
+}
+
+
 /* Efecto hover */
 .gallery-item:hover img {
     transform: scale(1.05);
@@ -612,30 +629,70 @@
 /* SECCIÓN REDES SOCIALES */
 /* ============================= */
 .social-section {
-  background: #000;        /* fondo negro */
-  text-align: center;
-  padding: 2rem 0;
+    background: #000;
+    /* fondo negro */
+    text-align: center;
+    padding: 2rem 0;
 }
 
 .social-section h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: gold;             /* texto blanco */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: gold;
+    /* texto blanco */
 }
 
 .social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 .social-icons a {
-  font-size: 2.5rem;
-  color: gold;             /* íconos dorados */
-  transition: transform 0.2s ease, color 0.3s ease;
+    font-size: 2.5rem;
+    color: gold;
+    /* íconos dorados */
+    transition: transform 0.2s ease, color 0.3s ease;
 }
 
 .social-icons a:hover {
-  transform: scale(1.2);
-  color: #d4af37;          /* dorado más oscuro en hover */
+    transform: scale(1.2);
+    color: #d4af37;
+    /* dorado más oscuro en hover */
+}
+
+/*SECCION VIDEO/*
+
+/* Sección Video */
+#video {
+    background-color: #111; /* fondo negro */
+    padding: 80px 0;
+    text-align: center;
+}
+
+#video .section-title {
+    color: #FFD700; /* dorado */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;   /* ajustable según diseño */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+.video-wrapper video {
+    width: 100%;
+    aspect-ratio: 9/16; /* mantiene formato vertical */
+    display: block;
+    border: none;
+    background: #000;   /* fondo negro también dentro del video */
 }
