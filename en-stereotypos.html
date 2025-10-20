@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stereotypos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-pVvF1Kz1Xq0a9I...tuhash..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- NAVBAR - ENGLISH -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+        <div class="container">
+            <!-- Logo Desktop & Mobile -->
+            <a class="navbar-brand" href="en-home.html">
+                <!-- Logo Desktop -->
+                <img src="./img/logo xl.png" alt="G Entertainment Logo Desktop" class="logo-img logo-desktop">
+                <!-- Logo Mobile -->
+                <img src="./img/G.png" alt="G Entertainment Logo Mobile" class="logo-img logo-mobile">
+            </a>
+
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavEn"
+                aria-controls="navbarNavEn" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarNavEn">
+                <ul class="navbar-nav ms-auto text-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="en-home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="en-stereotypos.html">STEREOTYPOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="en-gnosis.html">GNOSIS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="en-private.html">PRIVATE EVENTS</a>
+                    </li>
+                    <!-- Switch de idioma -->
+                    <li class="nav-item ms-3">
+                        <button id="langSwitch" class="btn btn-outline-warning">
+                            ES 🇪🇸
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- JS para switch de idioma -->
+    <script>
+        document.getElementById("langSwitch").addEventListener("click", function () {
+            // Redirige a la versión en español de la misma página
+            const currentPage = window.location.pathname.split("/").pop();
+
+            // Mapeo de archivos inglés → español
+            const langMap = {
+                "en-home.html": "index.html",
+                "en-stereotypos.html": "stereotypos.html",
+                "en-gnosis.html": "gnosis.html",
+                "en-private.html": "privados.html"
+            };
+
+            const targetPage = langMap[currentPage] || "index.html";
+            window.location.href = targetPage;
+        });
+    </script>
+
+
+    <!-- HERO SECTION -->
+
+    <main>
+
+        <section class="hero hero-stereotypos d-flex align-items-center text-center">
+            <div class="container">
+                <h1 class="hero-title">STEREOTYPOS</h1>
+                <p class="hero-subtitle">
+                    A unique experience paying tribute to Soda Stereo and Gustavo Cerati, characterized by a lively,
+                    authentic, and powerful celebration of the musical legacy of one of the most iconic Spanish-language
+                    rock bands. With hundreds of performances in cities such as Los Angeles, Las Vegas, Salt Lake City,
+                    and Mendoza, Argentina, STEREOTYPOS brings the energy and magic of Soda Stereo to every stage,
+                    rekindling the passion of multiple generations.
+                </p>
+            </div>
+        </section>
+
+        <!-- BIOGRAPHY SECTION - STEREOTYPOS -->
+
+        <section class="biography-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">BIOGRAPHY</h2>
+
+                <div class="bio-content">
+                    <p>
+                        Founded in October 2022 in Los Angeles, California, STEREOTYPOS is a musical and artistic
+                        tribute to Soda Stereo and Gustavo Cerati. Led by Gonzalo Baumgartner, a musician from Mendoza
+                        living in the United States since 2001, the band seeks to convey the unique essence, energy, and
+                        style that made Cerati a reference in Argentine and Latin American music. Through its
+                        performances, STEREOTYPOS connects with audiences by passionately and respectfully recreating
+                        songs that have marked generations, keeping a legacy alive that continues to inspire listeners
+                        of all ages.
+                    </p>
+
+                    <h3>Origins and Vision</h3>
+                    <p>
+                        The project was born from the desire to revive the original energy of Soda Stereo live,
+                        combining sonic fidelity with a modern and emotional stage presentation. Over time, the show
+                        evolved to include songs from Gustavo Cerati's solo repertoire, offering a complete and
+                        unforgettable experience that goes beyond the typical “tribute” concept.
+                    </p>
+
+                    <h3>Multicultural Lineup</h3>
+                    <p>
+                        From its beginnings in Los Angeles, STEREOTYPOS has included musicians from various origins and
+                        nationalities such as Argentina, Venezuela, and Spain, reflecting the international nature of
+                        its proposal and commitment to artistic excellence.
+                    </p>
+
+                    <hr>
+
+                    <h4>Performed in cities such as:</h4>
+                    <ul class="list-unstyled ms-3">
+                        <li>Las Vegas, Nevada</li>
+                        <li>Los Angeles, California</li>
+                        <li>Riverside, California</li>
+                        <li>Bakersfield, California</li>
+                        <li>Santa Fe Springs, California</li>
+                        <li>Salt Lake City, Utah</li>
+                        <li>Anaheim, Maywood, Pasadena, Downey</li>
+                    </ul>
+
+                    <h3>Notable Shows and Expansion</h3>
+                    <p>
+                        Throughout its trajectory, STEREOTYPOS has taken the Soda Stereo and Gustavo Cerati Experience
+                        to diverse stages, reaching even Argentina, including:
+                    </p>
+
+                    <ul class="list-unstyled ms-3">
+                        <li><strong>SOLD OUT</strong> at Teatro Tajamar in Mendoza (July 2024)</li>
+                    </ul>
+
+                    <p>
+                        Participation in events such as “Noche de Rock en Español” and multicultural festivals, sharing
+                        the lineup with high-level tribute bands.
+                    </p>
+
+                    <p>
+                        This return to Argentina consolidated its binational identity and its ability to connect with
+                        both nostalgic audiences and new generations discovering the legacy of Soda and Cerati through
+                        this live experience.
+                    </p>
+
+                    <h3>SUMMARY</h3>
+                    <p>
+                        STEREOTYPOS is not just a band: it is an immersive and emotional experience that revives the
+                        spirit of Soda Stereo and Gustavo Cerati with respect, passion, and unique energy. From its
+                        first show in October 2021 to today, its mission remains to keep the flame of Spanish-language
+                        rock alive through a high-level artistic proposal.
+                    </p>
+
+                    <hr>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO SECTION -->
+        <section id="video" class="py-5 text-center">
+            <div class="container">
+                <h2 class="section-title text-gold mb-4">Live Review</h2>
+                <div class="video-wrapper mx-auto">
+                    <video controls playsinline>
+                        <source src="./img/galeriastereotypos/reviewstereotypos.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- OFFERS - STEREOTYPOS -->
+        <section class="offers-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+
+                        <h4>What We Offer</h4>
+                        <p>A unique and authentic experience of the sound, energy, and stage presence of Soda Stereo.
+                        </p>
+                        <p>A complete journey through their history and most emblematic hits of all time.</p>
+                        <p>Coverage for all types of events: concerts, festivals, private and corporate shows, inside
+                            and outside the United States.</p>
+
+                        <h4>Available Formats</h4>
+                        <ul>
+                            <li>Full band of 5 musicians.</li>
+                            <li>Acoustic adaptable format from 1 to 5 musicians.</li>
+                            <li>For private events we provide professional sound equipment, lighting, smoke machines,
+                                and all resources necessary to ensure an unforgettable show.</li>
+                            <li>Flexible show duration: 1 to 3 hours (or more, upon request).</li>
+                        </ul>
+
+                        <!-- Call to Action -->
+                        <h3 class="cta-title text-center mt-5">🎶 Contact us to bring this experience to your next
+                            event!</h3>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM SECTION -->
+
+        <section id="contact-form" class="contact-form-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Hire Us!</h2>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+
+                        <form id="whatsappForm">
+                            <!-- Fields -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your full name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="service" class="form-label">Requested Service</label>
+                                <select class="form-select" id="service" required>
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="Stereotypos">Stereotypos</option>
+                                    <option value="Gnosis">Gnosis</option>
+                                    <option value="Private Event">Private Event</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="+54 9 11 1234 5678"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="details" class="form-label">Details</label>
+                                <textarea class="form-control" id="details" rows="4" placeholder="Describe your request"
+                                    required></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-golden px-5 py-2">Send WhatsApp</button>
+                            </div>
+                        </form>
+
+                        <!-- JS WhatsApp Form -->
+                        <script>
+                            document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+                                e.preventDefault();
+
+                                const name = document.getElementById("name").value.trim();
+                                const service = document.getElementById("service").value;
+                                const phone = document.getElementById("phone").value.trim();
+                                const details = document.getElementById("details").value.trim();
+
+                                const whatsappNumber = "18187145008"; // Change to your real number
+
+                                const message = `📩 *New Quote Request!*%0A
+                                *Full Name:* ${name}%0A
+                                *Requested Service:* ${service}%0A
+                                *Phone:* ${phone}%0A
+                                *Details:* ${details}`;
+
+                                window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
+                                this.reset();
+                            });
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION -->
+
+        <section id="gallery" class="gallery-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Gallery</h2>
+
+                <div class="gallery-masonry row g-3">
+
+                    <!-- Gallery Item 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriastereotypos/stereo1.jpg" alt="Description 1">
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriastereotypos/stereo2.jpg" alt="Description 2">
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriastereotypos/stereo3.jpg" alt="Description 3">
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriastereotypos/stereo4.jpg" alt="Description 4">
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="./img/galeriastereotypos/stereo5.jpg" alt="Description 5">
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item with Video -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="gallery-item">
+                            <video controls>
+                                <source src="./img/galeriastereotypos/stereovideo1.mp4" type="video/mp4">
+                                Your browser does not support video playback.
+                            </video>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Social Section -->
+    <section class="social-section">
+        <h3>Follow us on our social media</h3>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/stereotypos_la" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/stereotypos.la?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="py-4">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-6 mb-3 mt-3">
+                    <img src="img/logo xl.png" alt="G ENTERTAINMENT Logo" class="footer-logo mb-2 d-block mx-auto">
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="text-center mt-3 small">
+                © 2025 G ENTERTAINMENT - All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

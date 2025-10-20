@@ -16,10 +16,10 @@
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR - ESPAÑOL -->
     <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
         <div class="container">
-            <!-- Logo como imagen (desktop & mobile) -->
+            <!-- Logo Desktop & Mobile -->
             <a class="navbar-brand" href="index.html">
                 <!-- Logo Desktop -->
                 <img src="./img/logo xl.png" alt="G Entertainment Logo Desktop" class="logo-img logo-desktop">
@@ -28,14 +28,14 @@
             </a>
 
             <!-- Botón hamburguesa -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavEs"
+                aria-controls="navbarNavEs" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-center">
+            <div class="collapse navbar-collapse" id="navbarNavEs">
+                <ul class="navbar-nav ms-auto text-center align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">INICIO</a>
                     </li>
@@ -48,11 +48,36 @@
                     <li class="nav-item">
                         <a class="nav-link" href="privados.html">EVENTOS PRIVADOS</a>
                     </li>
+                    <!-- Switch de idioma -->
+                    <li class="nav-item ms-3">
+                        <button id="langSwitch" class="btn btn-outline-warning">
+                            EN 🇺🇸
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- ============================= -->
+
+    <!-- JS para switch de idioma -->
+    <script>
+        document.getElementById("langSwitch").addEventListener("click", function () {
+            // Redirige a la versión en inglés de la misma página
+            const currentPage = window.location.pathname.split("/").pop();
+
+            // Mapeo de archivos español → inglés
+            const langMap = {
+                "index.html": "en-home.html",
+                "stereotypos.html": "en-stereotypos.html",
+                "gnosis.html": "en-gnosis.html",
+                "privados.html": "en-private.html"
+            };
+
+            const targetPage = langMap[currentPage] || "en-home.html";
+            window.location.href = targetPage;
+        });
+    </script>
+
 
     <!-- HERO SECTION -->
 

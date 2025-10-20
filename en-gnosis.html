@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos Privados</title>
+    <title>Gnosis</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Estilos propios -->
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
 
-    <!-- NAVBAR - ESPAÑOL -->
+    <!-- NAVBAR - ENGLISH -->
     <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
         <div class="container">
             <!-- Logo Desktop & Mobile -->
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="en-home.html">
                 <!-- Logo Desktop -->
                 <img src="./img/logo xl.png" alt="G Entertainment Logo Desktop" class="logo-img logo-desktop">
                 <!-- Logo Mobile -->
@@ -26,30 +26,30 @@
             </a>
 
             <!-- Botón hamburguesa -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavEs"
-                aria-controls="navbarNavEs" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavEn"
+                aria-controls="navbarNavEn" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Links -->
-            <div class="collapse navbar-collapse" id="navbarNavEs">
+            <div class="collapse navbar-collapse" id="navbarNavEn">
                 <ul class="navbar-nav ms-auto text-center align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">INICIO</a>
+                        <a class="nav-link" href="en-home.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="stereotypos.html">STEREOTYPOS</a>
+                        <a class="nav-link" href="en-stereotypos.html">STEREOTYPOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gnosis.html">GNOSIS</a>
+                        <a class="nav-link" href="en-gnosis.html">GNOSIS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="privados.html">EVENTOS PRIVADOS</a>
+                        <a class="nav-link" href="en-private.html">PRIVATE EVENTS</a>
                     </li>
                     <!-- Switch de idioma -->
                     <li class="nav-item ms-3">
                         <button id="langSwitch" class="btn btn-outline-warning">
-                            EN 🇺🇸
+                            ES 🇪🇸
                         </button>
                     </li>
                 </ul>
@@ -60,113 +60,121 @@
     <!-- JS para switch de idioma -->
     <script>
         document.getElementById("langSwitch").addEventListener("click", function () {
-            // Redirige a la versión en inglés de la misma página
+            // Redirige a la versión en español de la misma página
             const currentPage = window.location.pathname.split("/").pop();
 
-            // Mapeo de archivos español → inglés
+            // Mapeo de archivos inglés → español
             const langMap = {
-                "index.html": "en-home.html",
-                "stereotypos.html": "en-stereotypos.html",
-                "gnosis.html": "en-gnosis.html",
-                "privados.html": "en-private.html"
+                "en-home.html": "index.html",
+                "en-stereotypos.html": "stereotypos.html",
+                "en-gnosis.html": "gnosis.html",
+                "en-private.html": "privados.html"
             };
 
-            const targetPage = langMap[currentPage] || "en-home.html";
+            const targetPage = langMap[currentPage] || "index.html";
             window.location.href = targetPage;
         });
     </script>
 
     <main>
 
-
         <!-- HERO SECTION -->
 
-        <section class="hero hero-privados d-flex align-items-center text-center">
+        <section class="hero hero-gnosis d-flex align-items-center text-center">
             <div class="container">
-                <h1 class="hero-title">EVENTOS PRIVADOS</h1>
-                <p class="hero-subtitle">Creamos shows personalizados para cada ocasión, adaptando formato, artistas y
-                    estilo según la visión del cliente. Desde eventos íntimos hasta grandes producciones, garantizamos
-                    una experiencia única e irrepetible.
+                <h1 class="hero-title">GNOSIS</h1>
+                <p class="hero-subtitle">
+                    Multi-tribute show that fuses the passion of flamenco, the power of Spanish guitars, and the joy of
+                    the gipsy repertoire, creating unique experiences that move and connect with all audiences.
                 </p>
             </div>
         </section>
 
         <!-- Biography Section -->
-        <section id="bio-privados" class="biography-section py-5">
+        <section id="bio-gnosis" class="biography-section py-5">
             <div class="container">
-                <h2 class="section-title text-center mb-4">PROPUESTA</h2>
+                <h2 class="section-title text-center mb-4">BIOGRAPHY</h2>
                 <div class="bio-content mx-auto" style="max-width: 900px;">
 
                     <p>
-                        Una alternativa innovadora para quienes buscan un espectáculo único, diseñado específicamente
-                        según las necesidades de cada evento. No se trata de un show estándar: cada presentación es
-                        creada en conjunto con el cliente, cuidando cada detalle artístico y estético para lograr un
-                        resultado inolvidable. La esencia de nuestro trabajo está en la versatilidad. Ya sea un
-                        evento íntimo o un gran escenario, adaptamos el formato, la cantidad de artistas y el estilo
-                        musical o performático para que cada show sea realmente irrepetible.
+                        GNOSIS was born in 2025 in response to the growing demand from our clients and event producers,
+                        who sought a versatile, innovative, and authentic proposal. Inspired by the unparalleled legacy
+                        of the Gipsy Kings, we decided to expand our vision to create a musical multi-tribute capable of
+                        adapting to any stage, genre, and atmosphere, thus offering a unique experience that combines
+                        tradition and modernity.
                     </p>
 
-                    <h3 class="mt-4">Orígenes y visión</h3>
+                    <h3 class="mt-4">Origins and Vision</h3>
                     <p>
-                        La esencia de nuestro trabajo está en la versatilidad. Desde encuentros íntimos hasta grandes
-                        producciones, diseñamos cada presentación a medida, ajustando formato, cantidad de artistas y
-                        estilo
-                        musical o performático. Cada detalle se cuida con precisión artística y estética para lograr un
-                        resultado auténtico y emotivo.
+                        Our essence is based on the power of Spanish guitars, the passion of flamenco singing, and the
+                        art
+                        of dance, achieving a show that engages the senses and deeply connects with the audience in each
+                        performance. Each interpretation is carefully designed to convey emotion, energy, and
+                        authenticity, recreating the magic of flamenco and the vibrant joy of the gipsy repertoire in an
+                        accessible and surprising format.
                     </p>
 
                     <hr class="my-4">
+
+                    <h3 class="mt-4">Highlighted Shows and Expansion</h3>
+                    <p>
+                        Throughout our shows, GNOSIS combines moments of intense passion with instances of celebration
+                        and fun, ensuring that every event becomes an unforgettable memory. Our proposal not only pays
+                        homage to the great classics of the Gipsy Kings but also incorporates elements from other
+                        musical genres and styles, offering a dynamic multi-tribute capable of adapting to audiences of
+                        all ages and contexts.
+                    </p>
 
                 </div>
             </div>
         </section>
 
+        <!-- ============================= -->
         <!-- CONTACT FORM SECTION -->
-
+        <!-- ============================= -->
         <section id="contact-form" class="contact-form-section py-5">
             <div class="container">
-                <h2 class="section-title text-center mb-4">¡Contrátanos!</h2>
+                <h2 class="section-title text-center mb-4">Hire Us!</h2>
 
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-8">
 
                         <form id="whatsappForm">
-                            <!-- Campos -->
+                            <!-- Fields -->
                             <div class="mb-3">
-                                <label for="name" class="form-label">Nombre y Apellido</label>
-                                <input type="text" class="form-control" id="name" placeholder="Tu nombre completo"
-                                    required>
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your full name" required>
                             </div>
 
                             <div class="mb-3">
-                                <label for="service" class="form-label">Servicio Solicitado</label>
+                                <label for="service" class="form-label">Requested Service</label>
                                 <select class="form-select" id="service" required>
-                                    <option value="" disabled selected>Selecciona un servicio</option>
+                                    <option value="" disabled selected>Select a service</option>
                                     <option value="Stereotypos">Stereotypos</option>
                                     <option value="Gnosis">Gnosis</option>
-                                    <option value="Evento Privado">Evento Privado</option>
+                                    <option value="Private Event">Private Event</option>
                                 </select>
                             </div>
 
                             <div class="mb-3">
-                                <label for="phone" class="form-label">Número de Teléfono</label>
+                                <label for="phone" class="form-label">Phone Number</label>
                                 <input type="tel" class="form-control" id="phone" placeholder="+54 9 11 1234 5678"
                                     required>
                             </div>
 
                             <div class="mb-3">
-                                <label for="details" class="form-label">Detalles</label>
-                                <textarea class="form-control" id="details" rows="4" placeholder="Describe tu solicitud"
+                                <label for="details" class="form-label">Details</label>
+                                <textarea class="form-control" id="details" rows="4" placeholder="Describe your request"
                                     required></textarea>
                             </div>
 
                             <div class="text-center">
-                                <button type="submit" class="btn btn-golden px-5 py-2">Enviar WhatsApp</button>
+                                <button type="submit" class="btn btn-golden px-5 py-2">Send WhatsApp</button>
                             </div>
                         </form>
 
                         <!-- ============================= -->
-                        <!-- JS Formulario WhatsApp -->
+                        <!-- JS WhatsApp Form -->
                         <!-- ============================= -->
                         <script>
                             document.getElementById("whatsappForm").addEventListener("submit", function (e) {
@@ -177,16 +185,16 @@
                                 const phone = document.getElementById("phone").value.trim();
                                 const details = document.getElementById("details").value.trim();
 
-                                const whatsappNumber = "18187145008"; // Cambiar por tu número real
+                                const whatsappNumber = "18187145008"; // Change to your real number
 
-                                const message = `📩 *Nueva solicitud de cotización!*%0A
-                                *Nombre y Apellido:* ${name}%0A
-                                *Servicio solicitado:* ${service}%0A
-                                *Teléfono:* ${phone}%0A
-                                *Detalles:* ${details}`;
+                                const message = `📩 *New Quote Request!*%0A
+                                *Full Name:* ${name}%0A
+                                *Requested Service:* ${service}%0A
+                                *Phone:* ${phone}%0A
+                                *Details:* ${details}`;
 
                                 window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
-                                // Limpiar formulario
+                                // Reset form
                                 this.reset();
                             });
                         </script>
@@ -200,57 +208,56 @@
 
         <section id="gallery" class="gallery-section py-5">
             <div class="container">
-                <h2 class="section-title text-center mb-4">Galería</h2>
+                <h2 class="section-title text-center mb-4">Gallery</h2>
 
                 <div class="gallery-masonry row g-3">
 
-                    <!-- Item de galería 1 -->
+                    <!-- Gallery Item 1 -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="gallery-item">
-                            <img src="./img/galeriapriv/priv1.jpg" alt="Descripción 1">
+                            <img src="./img/galeriagnosis/gnosis1.jpg" alt="Description 1">
                         </div>
                     </div>
 
-                    <!-- Item de galería 2 -->
+                    <!-- Gallery Item 2 -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="gallery-item">
-                            <img src="./img/galeriapriv/priv2.jpg" alt="Descripción 2">
+                            <img src="./img/galeriagnosis/gnosis2.jpg" alt="Description 2">
                         </div>
                     </div>
 
-                    <!-- Item de galería 3 -->
+                    <!-- Gallery Item 3 -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="gallery-item">
-                            <img src="./img/galeriapriv/priv3.jpg" alt="Descripción 3">
+                            <img src="./img/galeriagnosis/gnosis3.jpg" alt="Description 3">
                         </div>
                     </div>
 
-                    <!-- Item de galería 4 -->
+                    <!-- Gallery Item 4 -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="gallery-item">
-                            <img src="./img/galeriapriv/priv4.jpg" alt="Descripción 4">
+                            <img src="./img/galeriagnosis/gnosis4.jpg" alt="Description 4">
                         </div>
                     </div>
 
-                    <!-- Item de galería 5 -->
+                    <!-- Gallery Item 5 -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="gallery-item">
-                            <img src="./img/galeriapriv/priv5.jpg" alt="Descripción 5">
+                            <img src="./img/galeriagnosis/gnosis5.jpg" alt="Description 5">
                         </div>
                     </div>
 
-                    <!-- Item de galería 6 -->
+                    <!-- Gallery Item 6 -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="gallery-item">
-                            <img src="./img/galeriapriv/priv6.jpg" alt="Descripción 6">
+                            <img src="./img/galeriagnosis/gnosis6.jpg" alt="Description 6">
                         </div>
                     </div>
 
-                    <!-- Agregar más items según necesites -->
+                    <!-- Continue with remaining gallery items with alt text translated to "Description X" -->
                 </div>
             </div>
         </section>
-
 
     </main>
 
@@ -259,15 +266,15 @@
         <div class="container">
             <div class="row justify-content-center text-center">
 
-                <!-- Logo y Nombre -->
+                <!-- Logo and Name -->
                 <div class="col-md-6 mb-3 mt-3">
-                    <img src="img/logo xl.png" alt="Logo G ENTERTAINMENT" class="footer-logo mb-2 d-block mx-auto">
+                    <img src="img/logo xl.png" alt="G ENTERTAINMENT Logo" class="footer-logo mb-2 d-block mx-auto">
                 </div>
 
             </div>
             <hr class="footer-divider">
             <div class="text-center mt-3 small">
-                © 2025 G ENTERTAINMENT - Todos los derechos reservados
+                © 2025 G ENTERTAINMENT - All rights reserved
             </div>
         </div>
     </footer>
